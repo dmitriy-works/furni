@@ -219,10 +219,11 @@
       top: 188px;
       right: -174px;
       width: 296px;
-      height: 307px;
-      background-image: url('../images/choose__decor.png');
+      height: 307px;      
+      background-image: url('../images/choose__decor-chair-2.jpg');
       background-repeat: no-repeat;
       background-size: contain;
+      border-radius: 10px;
       z-index: -2;
     }
 
@@ -273,6 +274,120 @@
   }
 }
 
+.choose__img {
+  width: 542px;
+  border-radius: 20px;
+}
+
+
+.modern {
+  padding-bottom: 160px; 
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 292px;
+    top: -60px;
+    width: 262px;
+    height: 176px;
+    background-image: url('../images/choose__decor2.png');
+    background-repeat: no-repeat;
+    z-index: -2;
+  } 
+  
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 280px;    
+  }
+
+  &__images {
+    max-width: 630px;
+    position: relative;
+
+    &::before {
+    content: '';
+    position: absolute;
+    right: -223px;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-image: url('../images/modern-200.jpg');
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -250px;
+    bottom: 160px;
+    width: 305px;
+    height: 388px;
+    border-radius: 10px;
+    background-image: url('../images/modern-2.jpg');
+    background-repeat: no-repeat;
+    z-index: 12;
+  }
+
+
+
+    img {
+      max-width: 525px;
+      height: 620px;
+      border-radius: 20px;
+      background-size: cover;
+    }
+  }
+ 
+}
+
+.modern__content {
+  min-width: 378px;
+  padding-top: 30px;
+
+  &-title {
+    margin-bottom: 30px;
+  }
+
+  &-text {
+    margin-bottom: 30px;
+  }
+}
+
+.modern__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 38px;
+
+  &-item {
+    width: 200px;
+    padding-left: 25px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background-image: url('../images/gal.svg');
+    }
+  }
+
+  &-link {
+    font-weight: 700;
+    span {
+      display: block;
+      font-weight: 400;
+    }
+  }
+}
+
 
 
 
@@ -285,6 +400,28 @@
 
   .header__content::after {   
     right: 0px;    
+  }
+
+  .modern__inner {    
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  .modern__images::after {   
+    bottom: -49px;    
+  }
+
+  .modern__list-item {
+    width: 100%;   
+  }
+
+  .modern__content-title {    
+    text-align: center;
+  }
+
+  .modern__content-text {    
+    text-align: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -392,12 +529,53 @@
     justify-items: center;
   }
 
+  .choose__img {
+    width: 100%;   
+  }
+
   .choose__item {
     width: 100%;
   }
 
+}
+
+
+
+
+
+@media (max-width: 790px) {
+
+  .choose {
+    padding-bottom: 30px;
+  }
+
+  .modern__inner {
+    flex-direction: column-reverse;
+    gap: 7px;
+}
+
+  .modern__images::after,
+  .modern__images::before,
+  .modern::before {
+   display: none;
+  }
+
+  .modern__images {
+    max-width: 100%;    
+  }
+
+  .modern__images img {
+    max-width: 100%;
+    height: 100%;    
+  }
+
+  .modern__content {    
+    margin-bottom: 50px;
+  }
 
 }
+
+
 
 
 @media (max-width: 660px) {
@@ -508,6 +686,27 @@
   .choose__items {   
     grid-template-columns: repeat(1, 1fr);
     gap: 60px;
+  }
+
+  .choose__item {
+    max-width: 100%;
+  }
+
+  .modern__content {
+    min-width: 100%;   
+  }
+
+  .section-title {    
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .modern__list {   
+    grid-template-columns: repeat(1, 1fr);    
+  }
+
+  .material__content-btn {    
+    width: 100%;
   }
 }
 
