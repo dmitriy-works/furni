@@ -605,18 +605,26 @@
       background-repeat: no-repeat;
     }
   }
+
+
   &__inner {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;       
-    position: relative;  
+    flex-wrap: wrap;
+    position: relative;         
   }
 
-  &__images {
+  &__content {
     position: absolute;
-    top: -339px;
+    top: -273px;
     right: 0;
   }
+
+  // &__img {
+  //   position: absolute;
+  //   top: -273px;
+  //   right: 0;
+  // }
 }
 
 .subscribe__form {
@@ -660,6 +668,86 @@
     }
   }
 }
+
+.footer {
+  padding-bottom: 100px;
+
+  &__top {   
+
+    &-logo {
+    display: block;
+  }
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &-item {
+    max-width: 360px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $mainText;
+    margin-bottom: 60px;
+  }
+
+}
+
+.footer__list {
+  &-item {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $mainText;
+  }
+}
+
+.footer__social {
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #EFF2F1;
+
+  &-list {
+    display: flex;  
+    gap: 11px;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+  }
+}
+
+}
+
+.footer__bottom {
+  color: $mainText;
+  display: flex;
+  justify-content: space-between;
+
+  &-copyright {
+    font-size: 13px;
+  }
+}
+
+.footer__menu {
+
+  &-list {
+    display: flex;
+    gap: 42px;
+  }  
+
+}
+
+
+
+
+
 
 
 
@@ -749,8 +837,15 @@
   }
   .subscribe__images {    
     top: 50px;
-    right: 100px;
-   
+    right: 100px;   
+  }
+
+  .footer__top-inner {    
+    display: block;
+  }
+
+  .footer__top-item {
+    max-width: 100%;    
   }
 } 
 
@@ -905,6 +1000,24 @@
 
 }
 
+
+
+
+
+@media (max-width: 760px) {
+
+  .footer__menu-list {    
+    gap: 15px;
+  }
+}
+
+
+
+
+
+
+
+
 @media(max-width: 720px) {
 
   .examples__inner {   
@@ -917,6 +1030,11 @@
 
   .blog__item-img {   
     height: 100%;    
+  }
+
+  .footer__bottom {    
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
@@ -1173,6 +1291,22 @@
 
   .subscribe__form-btn {
     display: none;
+  }
+
+  .footer__bottom {   
+    gap: 0px;
+  }
+
+  .footer__bottom-copyright {
+    font-size: 11px;
+  }
+
+  .footer__menu-list {
+    gap: 10px;
+  }
+
+  .footer__menu-link {
+    font-size: 11px;
   }
   
 }
