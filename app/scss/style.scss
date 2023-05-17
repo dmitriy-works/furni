@@ -508,6 +508,7 @@
 
 .blog {
   color: $title;
+  background-color: #EFF2F1;
   padding-bottom: 160px; 
   
   &__top {
@@ -575,6 +576,86 @@
       span {
         font-weight: 400;        
       }
+    }
+  }
+}
+
+
+.subscribe { 
+  padding-top: 100px;
+  padding-bottom: 160px;  
+  &__title {
+    color: $title;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;                                
+    margin-bottom: 25px;
+    padding-left: 34px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 3px;
+      width: 26px;
+      height: 22px;
+      cursor: pointer;
+      background-image: url('../images/subscribe-icon.png');
+      background-repeat: no-repeat;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;       
+    position: relative;  
+  }
+
+  &__images {
+    position: absolute;
+    top: -339px;
+    right: 0;
+  }
+}
+
+.subscribe__form {
+  &-wrapper {
+    display: flex;
+    gap: 15px;
+  }
+  &-input {
+    display: block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 12px 22px 17px;
+    border: 1px solid #C4C4C4;
+    &::placeholder {      
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+      color: $title;
+    }
+  }
+  &-btn {
+    display: block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 12px 22px 17px;
+    border: 1px solid #C4C4C4;
+    background-color: $yellow;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 29px;
+      height: 29px;
+      background-image: url('../images/subscribe-icon-2.svg');
+      background-repeat: no-repeat;
     }
   }
 }
