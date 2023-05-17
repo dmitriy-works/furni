@@ -1,0 +1,12 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <symbol id="arr-prev" width="10" height="20" viewBox="0 0 10 20" fill="none">
+    <path d="M9 18.43L1 10.1164L9 1.80273" stroke="#2F2F2F" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </symbol>
+
+  <symbol id="arr-next" width="10" height="20" viewBox="0 0 10 20" fill="none">
+    <path d="M1 18.43L9 10.1164L1 1.80273" stroke="#2F2F2F" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </symbol>
