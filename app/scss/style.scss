@@ -11,19 +11,19 @@
 }
 
 .header {
-  min-height: 780px;
+  min-height: 100vh;
   color: #fff;
   background-color: $green;
-  background-image: url('../images/header-bg.jpg');
+  background-image: url('../images/header-bg-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   position: relative;
   &::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-color: rgba(27, 20, 20, 0.6);
+    background-color: rgba(27, 20, 20, 0.5);
   }
 
   &__logo {
@@ -49,7 +49,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 19px;
-    color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .8);
     position: relative;
     transition: all .2s ease-in-out;    
 
@@ -1116,8 +1116,9 @@
     padding-top: 141px;
     min-height: 100vh;
     color: #fff;
-    border-top: 5px solid #b6956e;    
-    background-color: $green;
+    // border-top: 5px solid #b6956e;    
+    border-bottom: 5px solid #b6956e;    
+    background-color: $title;
     transform: translateY(-200%);
     transition: transform 1s ease-in-out;
   }
